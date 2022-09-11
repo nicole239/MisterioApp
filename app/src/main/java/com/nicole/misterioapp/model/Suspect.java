@@ -24,4 +24,6 @@ public class Suspect extends AbstractCard {
     public Notebook getNotebook(){
         return this.notebook;
     }
+
+    public Deck getDeck() {return this.deck;}
 }

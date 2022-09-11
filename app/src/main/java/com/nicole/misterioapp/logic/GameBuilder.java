@@ -33,6 +33,7 @@ public class GameBuilder {
         Game.getInstance().solution = this.solution;
         Game.getInstance().dice = this.dice;
         Game.getInstance().currentPlayer = 0;
+        Game.getInstance().isBuilt = true;
     }
 
     private void build(IData data){

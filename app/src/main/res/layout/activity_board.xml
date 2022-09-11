@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,12 +10,15 @@
 
 
     <HorizontalScrollView
+        android:id="@+id/layoutHorizontalScrollBoard"
         android:layout_width="match_parent"
         android:layout_height="346dp">
 
         <ScrollView
+            android:id="@+id/layoutVerticalScrollBoard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <LinearLayout
                 android:id="@+id/layoutBoard"
                 android:layout_width="match_parent"
@@ -26,26 +30,37 @@
                     android:layout_height="match_parent"
                     android:text="Temporary board"
                     android:textColor="@color/white"
-                    android:textSize="120sp"/>
+                    android:textSize="120sp" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Temporary board"
                     android:textColor="@color/white"
-                    android:textSize="120sp"/>
+                    android:textSize="120sp" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Temporary board"
                     android:textColor="@color/white"
-                    android:textSize="120sp"/>
+                    android:textSize="120sp" />
             </LinearLayout>
         </ScrollView>
     </HorizontalScrollView>
 
+    <Button
+        android:id="@+id/btnOpenHand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See My Hand" />
+
     <FrameLayout
         android:id="@+id/fragmentNotebook"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
+
+
+
 
 </LinearLayout>

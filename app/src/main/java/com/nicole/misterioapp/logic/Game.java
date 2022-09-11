@@ -24,6 +24,8 @@ public class Game {
 
     protected int currentPlayer;
 
+    protected boolean isBuilt = false;
+
     private static Game instance;
 
     private Game(){}
@@ -39,6 +41,14 @@ public class Game {
         players.get(currentPlayer)
                 .getNotebook()
                 .Annotate(type, idCard, discovery);
+    }
+
+    public boolean isBuilt(){
+        return isBuilt;
+    }
+
+    public Deck getCurrentPlayerDeck(){
+        return players.get(currentPlayer).getDeck();
     }
 
     public Notebook getCurrentPlayerNotebook(){
