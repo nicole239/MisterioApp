@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,6 +36,8 @@ public class NotebookFragment extends Fragment {
     private int shownNotebookPageNumber = -1;
 
     private Notebook notebook;
+
+    private final int notebookItemSize = 70;
 
     public NotebookFragment() {
         // Required empty public constructor
@@ -85,6 +88,7 @@ public class NotebookFragment extends Fragment {
         NotebookAdapter adapter = new NotebookAdapter(new DataNotebookGUI(cardType, data, notebook, rootView.getContext()));
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(rootView.getContext()));
+        recyclerView.setNestedScrollingEnabled(false);
         notebookView[position] = recyclerView;
 
         TextView btnShowNotebook = rootView.findViewById(btnShowId);
@@ -101,8 +105,14 @@ public class NotebookFragment extends Fragment {
         }else{
             //Show clicked notebook page
             shownNotebookPageNumber = goToPage;
-            expand(notebookView[shownNotebookPageNumber]);
+            int pageHeightDps = notebookItemSize * notebook.numberOfItemsInPage(CardType.values()[shownNotebookPageNumber]);
+            expand(notebookView[shownNotebookPageNumber], dpsToPixels(pageHeightDps));
             notebookView[shownNotebookPageNumber].setVisibility(View.VISIBLE);
         }
+    }
+
+    private int dpsToPixels(int dps){
+        final float scale = getResources().getDisplayMetrics().density;
+        return (int) (dps * scale + 0.5f);
     }
 }

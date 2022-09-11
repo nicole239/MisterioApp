@@ -7,9 +7,12 @@ import android.view.animation.Transformation;
 
 public class Animations {
 
-    public static void expand(final View v) {
-        v.measure(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        final int targetHeight = v.getMeasuredHeight();
+    public static void expand(final View v, int height) {
+        if(height < 0){
+            v.measure(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+            height = v.getMeasuredHeight();
+        }
+        final int targetHeight = height;
 
         // Older versions of android (pre API 21) cancel animations for views with a height of 0.
         v.getLayoutParams().height = 1;
@@ -19,7 +22,7 @@ public class Animations {
             @Override
             protected void applyTransformation(float interpolatedTime, Transformation t) {
                 v.getLayoutParams().height = interpolatedTime == 1
-                        ? ViewGroup.LayoutParams.WRAP_CONTENT
+                        ? targetHeight
                         : (int)(targetHeight * interpolatedTime);
                 v.requestLayout();
             }

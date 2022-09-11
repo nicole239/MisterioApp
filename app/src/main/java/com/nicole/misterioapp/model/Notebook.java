@@ -34,6 +34,10 @@ public class Notebook implements Parcelable {
         return discoveries.get(notebookPage);
     }
 
+    public int numberOfItemsInPage(CardType cardType){
+        return discoveries.get(cardType).size();
+    }
+
     //Parcelable interface required functions
     @Override
     public int describeContents() {
