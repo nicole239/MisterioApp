@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    tools:context=".NotebookFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <LinearLayout
+            android:id="@+id/layoutNotebookSuspects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:textSize="30sp"
+                android:text="@string/Notebook"/>
+
+            <Button
+                android:id="@+id/btnShowNotebookSuspects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Suspects"
+                android:backgroundTint="@color/wine"
+                android:padding="10sp"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lstNotebookSuspects"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnShowNotebookRooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Rooms"
+                android:backgroundTint="@color/teal"
+                android:padding="10sp"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lstNotebookRooms"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/btnShowNotebookWeapons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Weapons"
+                android:backgroundTint="@color/pink"
+                android:padding="10sp"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lstNotebookWeapons"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

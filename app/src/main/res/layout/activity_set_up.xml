@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ic_launcher_background"
+    tools:context=".SetUpActivity">
+
+    <TextView
+        android:id="@+id/lblConfigTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/bahnschrift12"
+        android:text="Set Up" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/bahnschrift12"
+        android:text="Pick players:" />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnAddSus1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/wine"
+                app:srcCompat="@drawable/card_sus_1_prince_clean" />
+
+            <ImageButton
+                android:id="@+id/btnAddSus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/wine"
+                app:srcCompat="@drawable/card_sus_2_duke_clean" />
+
+            <ImageButton
+                android:id="@+id/btnAddSus3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/wine"
+                app:srcCompat="@drawable/card_sus_3_maid_clean" />
+
+            <ImageButton
+                android:id="@+id/btnAddSus4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/wine"
+                app:srcCompat="@drawable/card_sus_4_queen_clean" />
+
+            <ImageButton
+                android:id="@+id/btnAddSus5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/wine"
+                app:srcCompat="@drawable/card_sus_5_knight_clean" />
+
+            <ImageButton
+                android:id="@+id/btnAddSus6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/wine"
+                app:srcCompat="@drawable/card_sus_6_priest_clean" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/lblPlayersPicked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:fontFamily="@font/bahnschrift12"
+        android:textStyle="bold"
+        android:text="You've picked:" />
+
+    <Button
+        android:id="@+id/btnBeginGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="25sp"
+        android:enabled="false"
+        android:text="BEGIN GAME" />
+
+</LinearLayout>

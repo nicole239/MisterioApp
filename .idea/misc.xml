@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Nicole/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Nicole/Documents/Clue/MisterioApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2265" />
+        <entry key="..\:/Users/Nicole/Documents/Clue/MisterioApp/app/src/main/res/drawable/door_cell_bg.xml" value="0.317" />
+        <entry key="..\:/Users/Nicole/Documents/Clue/MisterioApp/app/src/main/res/drawable/empty_cell_bg.xml" value="0.317" />
+        <entry key="..\:/Users/Nicole/Documents/Clue/MisterioApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
+        <entry key="..\:/Users/Nicole/Documents/Clue/MisterioApp/app/src/main/res/drawable/my_button_bg.xml" value="0.264" />
+        <entry key="..\:/Users/Nicole/Documents/Clue/MisterioApp/app/src/main/res/drawable/player_cell_bg.xml" value="0.317" />
+        <entry key="..\:/Users/Nicole/Documents/Clue/MisterioApp/app/src/main/res/font/default_font.xml" value="0.14010416666666667" />
+        <entry key="..\:/Users/Nicole/Documents/Clue/MisterioApp/app/src/main/res/font/font.xml" value="0.2833333333333333" />
+        <entry key="..\:/Users/Nicole/Documents/Clue/MisterioApp/app/src/main/res/layout/activity_board.xml" value="0.2817391304347826" />
+        <entry key="..\:/Users/Nicole/Documents/Clue/MisterioApp/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Nicole/Documents/Clue/MisterioApp/app/src/main/res/layout/activity_set_up.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Nicole/Documents/Clue/MisterioApp/app/src/main/res/layout/fragment_notebook.xml" value="0.48494983277591974" />
+        <entry key="..\:/Users/Nicole/Documents/Clue/MisterioApp/app/src/main/res/layout/notebook_item.xml" value="0.4906937394247039" />
+        <entry key="..\:/Users/Nicole/Documents/Clue/MisterioApp/app/src/main/res/layout/spinner_item.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

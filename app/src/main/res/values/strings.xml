@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Mystery</string>
+    <string-array name="suspectNames">
+        <item>Prince</item>
+        <item>Duke</item>
+        <item>Maid</item>
+        <item>Queen</item>
+        <item>Knight</item>
+        <item>Priest</item>
+    </string-array>
+    <string name="Notebook">Notebook</string>
+    <string name="Suspects">Suspects</string>
+    <string name="Weapons">Weapons</string>
+    <string name="Rooms">Rooms</string>
+</resources>
